@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainActivity"
+    tools:context=".views.ui.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/userInput"
+            android:layout_width="0dp"
+            android:layout_height="47dp"
+            android:layout_margin="8dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:layout_below="@id/search_select_group"
+            android:enabled="false"
+            android:inputType="text" />
+
+        <RadioGroup
+            android:id="@+id/search_select_group"
+            android:layout_width="32dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_alignParentTop="true">
+
+            <RadioButton
+                android:id="@+id/date_select"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date: " />
+
+            <RadioButton
+                android:id="@+id/select_Search_Road"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Road: " />
+        </RadioGroup>
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/search_select_group"
+            tools:ignore="MissingConstraints">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+
+                <ProgressBar
+                    android:id="@+id/progressbar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:visibility="gone" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+
+            </LinearLayout>
+        </ScrollView>
+
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_navigation"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            app:menu="@menu/bottom_navigation_menu" />
+
+
+    </RelativeLayout>
+</layout>
