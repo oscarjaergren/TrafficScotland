@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<!--
+Developer: Oscar Jargren
+Student ID: S1805227
+-->
+
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.trafficscotland" >
+    package="com.example.trafficscotland">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -10,18 +16,19 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.TrafficScotland" >
+        android:theme="@style/Theme.TrafficScotland">
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyBMlPwe7BECTviV4WGPSxPJceTHrFAxsvM"/>
+            android:value="AIzaSyBMlPwe7BECTviV4WGPSxPJceTHrFAxsvM" />
+
         <activity
             android:name=".views.ui.TrafficDetailsActivity"
             android:exported="false" />
         <activity
             android:name=".views.ui.MainActivity"
             android:exported="true"
-            android:label="Traffic Scotland" >
+            android:label="Traffic Scotland">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

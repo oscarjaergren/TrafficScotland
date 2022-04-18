@@ -1,3 +1,9 @@
+/*
+ Developer: Oscar Jargren
+ Student ID: S1805227
+*/
+
+
 package com.example.trafficscotland.views.ui;
 
 import androidx.appcompat.app.AppCompatActivity;

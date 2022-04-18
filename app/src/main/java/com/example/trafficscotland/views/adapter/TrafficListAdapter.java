@@ -1,5 +1,10 @@
 package com.example.trafficscotland.views.adapter;
 
+/*
+ Developer: Oscar Jargren
+ Student ID: S1805227
+*/
+
 import android.graphics.Color;
 import android.os.Build;
 import android.util.Log;
@@ -20,6 +25,7 @@ import com.example.trafficscotland.views.callback.TrafficClickCallback;
 
 import java.util.List;
 import java.util.Objects;
+
 
 public class TrafficListAdapter extends RecyclerView.Adapter<TrafficListAdapter.TrafficListAdapterViewHolder> implements TrafficClickCallback {
     List<? extends TrafficData> trafficDataList;
