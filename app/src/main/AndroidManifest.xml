@@ -20,7 +20,7 @@ Student ID: S1805227
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyBMlPwe7BECTviV4WGPSxPJceTHrFAxsvM" />
+            android:value="INSERT KEY HERE" />
 
         <activity
             android:name=".views.ui.TrafficDetailsActivity"
